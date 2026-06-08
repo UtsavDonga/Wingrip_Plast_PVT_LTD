@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /studio/
+
+# Host
+Host: https://www.wingrippipes.com
+
+# Sitemaps
+Sitemap: https://www.wingrippipes.com/sitemap.xml
