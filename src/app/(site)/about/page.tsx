@@ -60,8 +60,8 @@ const TIMELINE: { year: string; title: string; description: string }[] = [
 
 const PLANT_HIGHLIGHTS = [
   { icon: Factory, label: 'Manufacturing Plant', value: 'Hapa, Jamnagar, Gujarat' },
-  { icon: TrendingUp, label: 'Plant Area', value: '[CLIENT TO PROVIDE: plant area in sq. ft.]' },
-  { icon: Users, label: 'Workforce', value: '[CLIENT TO PROVIDE: number of employees]' },
+  { icon: TrendingUp, label: 'Plant Area', value: '44,000 sq. ft.' },
+  { icon: Users, label: 'Production Lines', value: '6 Extrusion Lines' },
   { icon: Award, label: 'Certifications', value: 'ISO 9001:2015 + BIS + ISI' },
 ]
 
@@ -169,9 +169,8 @@ export default function AboutPage() {
 
                     {/* Content */}
                     <div
-                      className={`ml-4 flex-1 rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:ml-0 md:w-[calc(50%-36px)] ${
-                        i % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
-                      }`}
+                      className={`ml-4 flex-1 rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:ml-0 md:w-[calc(50%-36px)] ${i % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
+                        }`}
                     >
                       <span className="mb-1 block text-xs font-bold text-accent">{event.year}</span>
                       <h3 className="mb-2 text-base font-bold text-neutral-dark">{event.title}</h3>

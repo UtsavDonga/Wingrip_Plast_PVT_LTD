@@ -39,20 +39,28 @@ export default function Footer() {
               ))}
             </div>
 
-            {/* Social Icons */}
+            {/* Social Icons — only rendered when a URL is configured */}
             <div className="flex gap-3">
-              <SocialLink href={COMPANY.social.facebook} label="Facebook">
-                <Facebook size={16} />
-              </SocialLink>
-              <SocialLink href={COMPANY.social.instagram} label="Instagram">
-                <Instagram size={16} />
-              </SocialLink>
-              <SocialLink href={COMPANY.social.linkedin} label="LinkedIn">
-                <Linkedin size={16} />
-              </SocialLink>
-              <SocialLink href={COMPANY.social.youtube} label="YouTube">
-                <Youtube size={16} />
-              </SocialLink>
+              {COMPANY.social.facebook && (
+                <SocialLink href={COMPANY.social.facebook} label="Facebook">
+                  <Facebook size={16} />
+                </SocialLink>
+              )}
+              {COMPANY.social.instagram && (
+                <SocialLink href={COMPANY.social.instagram} label="Instagram">
+                  <Instagram size={16} />
+                </SocialLink>
+              )}
+              {COMPANY.social.linkedin && (
+                <SocialLink href={COMPANY.social.linkedin} label="LinkedIn">
+                  <Linkedin size={16} />
+                </SocialLink>
+              )}
+              {COMPANY.social.youtube && (
+                <SocialLink href={COMPANY.social.youtube} label="YouTube">
+                  <Youtube size={16} />
+                </SocialLink>
+              )}
             </div>
           </div>
 

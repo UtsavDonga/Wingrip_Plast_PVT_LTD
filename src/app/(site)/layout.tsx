@@ -18,6 +18,7 @@ const localBusinessJsonLd = {
   email: COMPANY.email,
   foundingDate: String(COMPANY.founded),
   slogan: COMPANY.tagline,
+  taxID: COMPANY.gst,
   address: {
     '@type': 'PostalAddress',
     streetAddress: `${COMPANY.address.line1}, ${COMPANY.address.line2}`,

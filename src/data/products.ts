@@ -430,7 +430,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Inner Layer', value: 'Food-grade white HDPE' },
       { label: 'Manhole', value: '200mm easy-clean access manhole' },
       { label: 'Fittings', value: 'Inlet, outlet, overflow, drain' },
-      { label: 'Warranty', value: '[CLIENT TO PROVIDE: warranty period]' },
+      { label: 'Warranty', value: 'Available on request' },
     ],
     sizes: ['1000L'],
     features: [

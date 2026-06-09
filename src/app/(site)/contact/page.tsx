@@ -136,27 +136,28 @@ export default function ContactPage() {
 
           {/* Google Maps Embed */}
           <div className="mt-12">
-            <h2 className="mb-6 text-xl font-bold text-neutral-dark">Our Location</h2>
+            <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+              <h2 className="text-xl font-bold text-neutral-dark">Our Location</h2>
+              <a
+                href={COMPANY.mapLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-white"
+              >
+                <MapPin size={15} aria-hidden="true" />
+                Open in Google Maps
+              </a>
+            </div>
             <div className="overflow-hidden rounded-2xl border border-gray-100 shadow-card">
-              <div className="flex h-72 w-full items-center justify-center bg-neutral-light">
-                <div className="text-center">
-                  <MapPin size={32} className="mx-auto mb-2 text-primary" aria-hidden="true" />
-                  <p className="text-sm font-semibold text-gray-600">
-                    {COMPANY.address.full}
-                  </p>
-                  <a
-                    href={`https://maps.google.com/?q=${encodeURIComponent(COMPANY.address.full)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-2 rounded-lg border border-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-white"
-                  >
-                    Open in Google Maps
-                  </a>
-                  <p className="mt-3 text-xs text-gray-400 italic">
-                    [CLIENT TO PROVIDE: Google Maps embed URL for exact factory location]
-                  </p>
-                </div>
-              </div>
+              <iframe
+                src={COMPANY.mapEmbedUrl}
+                title="Wingrip Plast Pvt. Ltd. — factory location on Google Maps"
+                className="h-72 w-full md:h-96"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>

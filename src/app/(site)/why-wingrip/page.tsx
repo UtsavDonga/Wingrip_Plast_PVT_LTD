@@ -76,11 +76,11 @@ const QUALITY_TESTS = [
 ]
 
 const INFRASTRUCTURE = [
-  { label: 'Plant Area', value: '[CLIENT TO PROVIDE: plant area in sq. ft.]' },
-  { label: 'Extrusion Lines', value: '[CLIENT TO PROVIDE: number of extrusion lines]' },
-  { label: 'Monthly Capacity', value: '[CLIENT TO PROVIDE: monthly production capacity]' },
+  { label: 'Plant Area', value: '44,000 sq. ft.' },
+  { label: 'Extrusion Lines', value: '6 lines' },
   { label: 'In-house QC Lab', value: 'Fully equipped testing laboratory' },
-  { label: 'Workforce', value: '[CLIENT TO PROVIDE: number of employees]' },
+  { label: 'Product Categories', value: '7' },
+  { label: 'Pan-India Supply', value: '28+ States' },
   { label: 'Operational Since', value: '2013' },
 ]
 

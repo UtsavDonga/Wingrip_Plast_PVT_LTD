@@ -3,9 +3,9 @@ export const COMPANY = {
   shortName: 'Wingrip',
   tagline: 'Excellence Is Our Passion',
   founded: 2013,
-  phone: '+91-[CLIENT TO PROVIDE: phone number]',
-  phoneDisplay: '[CLIENT TO PROVIDE: phone number]',
-  whatsapp: '919978479105',
+  phone: '+91-8849009147',
+  phoneDisplay: '+91 88490 09147',
+  whatsapp: '918849009147',
   email: 'info@wingrippipes.com',
   salesEmail: 'sales@wingrippipes.com',
   address: {
@@ -18,14 +18,15 @@ export const COMPANY = {
     full: 'Survey No.421, Plot No.26, Opp. Sujata International, B/h Mahindra Tractor, Hapa, Jamnagar – 361120, Gujarat, India',
   },
   mapEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0![CLIENT TO PROVIDE: Google Maps embed URL for Wingrip factory]',
+    'https://www.google.com/maps?q=Wingrip+Plast+Pvt+Ltd,+Hapa+Industrial+Area,+Jamnagar,+Gujarat+361120&output=embed',
+  mapLink: 'https://maps.google.com/?q=Wingrip+Plast+Pvt+Ltd,+Hapa+Industrial+Area,+Jamnagar,+Gujarat+361120',
   social: {
-    facebook: 'https://facebook.com/[CLIENT TO PROVIDE]',
-    instagram: 'https://instagram.com/[CLIENT TO PROVIDE]',
-    linkedin: 'https://linkedin.com/company/[CLIENT TO PROVIDE]',
-    youtube: 'https://youtube.com/@[CLIENT TO PROVIDE]',
+    facebook: '',
+    instagram: 'https://www.instagram.com/wingrip_plast',
+    linkedin: '',
+    youtube: '',
   },
-  gst: '[CLIENT TO PROVIDE: GST number]',
+  gst: '24AABCW6076G1Z9',
   cataloguePdf: '/downloads/wingrip-product-catalogue.pdf',
 } as const
 
