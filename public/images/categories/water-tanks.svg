@@ -1,0 +1,19 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tank lid -->
+  <rect x="18" y="8" width="44" height="10" rx="4" stroke="#185FA5" stroke-width="3" fill="none"/>
+  <!-- Tank body -->
+  <rect x="12" y="18" width="56" height="42" rx="5" stroke="#185FA5" stroke-width="3.2" fill="none"/>
+  <!-- Water level wave inside tank -->
+  <path d="M16 44 Q22 40 28 44 Q34 48 40 44 Q46 40 52 44 Q58 48 64 44" stroke="#185FA5" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <!-- 3-layer indicator lines (left side) -->
+  <line x1="12" y1="28" x2="16" y2="28" stroke="#185FA5" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="12" y1="38" x2="16" y2="38" stroke="#185FA5" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="12" y1="48" x2="16" y2="48" stroke="#185FA5" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Outlet pipe at bottom -->
+  <rect x="34" y="60" width="12" height="8" rx="2" stroke="#185FA5" stroke-width="2.5" fill="none"/>
+  <!-- Tap/valve -->
+  <line x1="28" y1="64" x2="34" y2="64" stroke="#185FA5" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="26" cy="64" r="3" stroke="#185FA5" stroke-width="2.2" fill="none"/>
+  <!-- Handle on tap -->
+  <line x1="26" y1="61" x2="26" y2="58" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+</svg>

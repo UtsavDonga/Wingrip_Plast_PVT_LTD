@@ -1,19 +1,20 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import SectionHeading from '@/components/ui/SectionHeading'
 import { PRODUCT_CATEGORIES } from '@/data/products'
 
 const CATEGORY_ICONS: Record<string, string> = {
-  'cpvc-pipes-fittings': '🔵',
-  'upvc-pipes-fittings': '🟢',
-  'swr-pipes-fittings': '🟠',
-  'agriculture-pipes': '🌿',
-  'water-tanks': '💧',
-  'solvent-cement': '🟡',
-  'brass-fittings-valves': '🔩',
+  'cpvc-pipes-fittings': '/images/categories/cpvc-pipes.svg',
+  'upvc-pipes-fittings': '/images/categories/upvc-pipes.svg',
+  'swr-pipes-fittings': '/images/categories/swr-pipes.svg',
+  'agriculture-pipes': '/images/categories/agriculture-pipes.svg',
+  'water-tanks': '/images/categories/water-tanks.svg',
+  'solvent-cement': '/images/categories/solvent-cement.svg',
+  'brass-fittings-valves': '/images/categories/brass-fittings-valves.svg',
 }
 
 const container = {
@@ -55,8 +56,15 @@ export default function ProductCategories() {
                 className="group flex h-full flex-col rounded-2xl border border-gray-100 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-card-hover"
                 aria-label={`View ${cat.name} products`}
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/8 text-2xl">
-                  {CATEGORY_ICONS[cat.slug] || '📦'}
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/8 transition-transform duration-300 group-hover:scale-110">
+                  <Image
+                    src={CATEGORY_ICONS[cat.slug] || '/images/categories/cpvc-pipes.svg'}
+                    alt=""
+                    width={34}
+                    height={34}
+                    unoptimized
+                    aria-hidden="true"
+                  />
                 </div>
                 <h3 className="mb-2 text-base font-bold text-neutral-dark transition-colors group-hover:text-primary">
                   {cat.name}

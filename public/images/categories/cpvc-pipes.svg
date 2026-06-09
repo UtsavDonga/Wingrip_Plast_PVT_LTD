@@ -1,0 +1,12 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Horizontal pipe body -->
+  <rect x="6" y="31" width="68" height="18" rx="9" stroke="#185FA5" stroke-width="3.5" fill="none"/>
+  <!-- Top U-bend / elbow -->
+  <path d="M22 31 L22 18 Q22 10 30 10 L50 10 Q58 10 58 18 L58 31" stroke="#185FA5" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bottom outlet -->
+  <line x1="40" y1="49" x2="40" y2="60" stroke="#185FA5" stroke-width="3" stroke-linecap="round"/>
+  <!-- End cap ring bottom -->
+  <circle cx="40" cy="65" r="5.5" stroke="#185FA5" stroke-width="2.8" fill="none"/>
+  <!-- CPVC label inside pipe -->
+  <text x="40" y="44" text-anchor="middle" font-size="8" font-weight="700" fill="#185FA5" font-family="Arial, sans-serif" letter-spacing="0.5">CPVC</text>
+</svg>
