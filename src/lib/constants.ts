@@ -6,8 +6,8 @@ export const COMPANY = {
   phone: '+91-8849009147',
   phoneDisplay: '+91 88490 09147',
   whatsapp: '918849009147',
-  email: 'info@wingrippipes.com',
-  salesEmail: 'sales@wingrippipes.com',
+  email: 'wingripplast@gmail.com',
+  salesEmail: 'wingripplast@gmail.com',
   address: {
     line1: 'Survey No.421, Plot No.26',
     line2: 'Opp. Sujata International, B/h Mahindra Tractor',
